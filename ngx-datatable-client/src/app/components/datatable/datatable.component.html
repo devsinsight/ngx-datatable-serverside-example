@@ -1,0 +1,17 @@
+<ngx-datatable
+  style="height: 380px"
+  class="material"
+  [rows]="rows"
+  [columns]="columns"
+  [columnMode]="ColumnMode.standard"
+  [headerHeight]="50"
+  [footerHeight]="50"
+  rowHeight="auto"
+  [externalPaging]="true"
+  [count]="page.totalRecords"
+  [offset]="page.pageNumber"
+  [limit]="page.pageSize"
+  (page)="setPage($event)"
+  (sort)="onSort($event)"
+>
+</ngx-datatable>
